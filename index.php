@@ -18,33 +18,30 @@ $f3 -> set('DEBUG',3);
 //default root (home page)
 $f3 -> route('GET /', function ()
 {
-    echo "home page";
-    //$view = new Template();
-    //echo $view -> render('views/home.html');
+    $view = new Template();
+    echo $view -> render('views/home.html');
 });
 
 //define order route
 $f3 -> route('GET /order', function ()
 {
-//    $view = new Template();
-//    echo $view -> render('views/home.html');
-    echo "order 1";
+    $view = new Template();
+    echo $view -> render('views/home.html');
 });
 
 //define order2
 $f3 -> route('GET /order2', function ()
 {
-    echo "order 2";
-//    $view = new Template();
-//    echo $view -> render('views/home.html');
+    $view = new Template();
+    echo $view -> render('views/home.html');
 });
 
 //define summary route
 $f3 -> route('GET /summary', function ()
 {
-    echo "summary";
-//    $view = new Template();
-//    echo $view -> render('views/home.html');
+
+    $view = new Template();
+    echo $view -> render('views/home.html');
 });
 
 //run fat free
